@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-Vindo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: calc(100% - 44px); /* Espaço para a borda */
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: calc(100% - 44px); /* Espaço para a borda */
+            padding: 15px; /* Reduzir o tamanho do botão */
+            background-color: #25d366; /* Cor do WhatsApp */
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            position: relative;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #128c7e; /* Cor de hover do WhatsApp */
+        }
+        .fab {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        #imagem-topo {
+            width: 100%;
+            height: 25%;
+             /* Ajuste para cobrir toda a área */
+            position: absolute;
+            top: 20px;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+  <img id="imagem-topo" src="{{url_for('static', filename='dupla.jpeg')}}" alt="Imagem de Fundo">
+    <h1>Bem-Vindo</h1>
+    <form action="/get_data" method="post" target="_blank">
+        <input type="hidden" name="phone" value="+5512982000062">
+        <input type="hidden" name="text" value="Estudo bíblico.">
+        <input required type="text" name="nome" placeholder="Nome">
+        <input required type="number" name="telefone" placeholder="Telefone">
+        <textarea name="mensagem" placeholder="Pedido de Oração"></textarea>
+        <button type="submit"><i class="fab fa-whatsapp"></i> Falar com a Esperança</button>
+    </form>
+  </p>
+  </p>
+  <a href="https://api.whatsapp.com/send?phone=+5592985152319&text=Olá, gostaria de mais informações sobra a Dupla da Esperança">Saiba mais</a>
+</div>
+
+</body>
+</html>
