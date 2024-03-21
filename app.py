@@ -5,6 +5,7 @@ from datetime import datetime
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, CallbackContext
 import telegram
+import os
 
 now = datetime.today().strftime('%d-%m-%Y')
 bot = telegram.Bot(token=os.environ['TOKEN'])
