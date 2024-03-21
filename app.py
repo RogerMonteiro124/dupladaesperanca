@@ -34,11 +34,11 @@ def get_data():
 
   msg = """
 𝐍𝐨𝐯𝐨 𝐜𝐨𝐧𝐭𝐚𝐭𝐨 📗
-𝙰𝚕𝚐𝚞é𝚖 𝚙𝚛𝚎𝚌𝚒𝚜𝚊 𝚍𝚎 𝙴𝚜𝚙𝚎𝚛𝚎𝚗ç𝚊 🙏
+𝙿𝚎𝚍𝚒𝚍𝚘 𝚍𝚎 𝙴𝚜𝚙𝚎𝚛𝚎𝚗ç𝚊 🙏
 
-**Nome:"""+str(nome)+"""**  
-**Telefone:"""+str(telefone)+"""**  
-**Pedido de Oração:"""+str(pedido)+"""** 
+**Nome:** **"""+str(nome)+"""**  
+**Telefone:** """+str(telefone)+"""  
+**Pedido de Oração:** **"""+str(pedido)+"""** 
 """
   
   #send telegram message
