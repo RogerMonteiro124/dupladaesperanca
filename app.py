@@ -8,7 +8,7 @@ import telegram
 import os
 
 now = datetime.today().strftime('%d-%m-%Y')
-bot = telegram.Bot(token=os.environ['TOKEN'])
+bot = telegram.Bot(token=os.environ.get('TOKEN'))
 
 def send(text):
       print("sendou")
