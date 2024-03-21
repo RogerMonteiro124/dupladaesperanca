@@ -33,12 +33,12 @@ def get_data():
   text = request.form.get('text')
 
   msg = """
-## Novo contato
-:bulb: Alguém precisa de Esperença :bulb: :pray:
+𝐍𝐨𝐯𝐨 𝐜𝐨𝐧𝐭𝐚𝐭𝐨 📗
+𝙰𝚕𝚐𝚞é𝚖 𝚙𝚛𝚎𝚌𝚒𝚜𝚊 𝚍𝚎 𝙴𝚜𝚙𝚎𝚛𝚎𝚗ç𝚊 🙏
 
-:clipboard: **Nome:"""+str(nome)+"""**  
-:iphone: **Telefone:"""+str(telefone)+"""**  
-:pray: **Pedido de Oração:"""+str(pedido)+"""** 
+**Nome:"""+str(nome)+"""**  
+**Telefone:"""+str(telefone)+"""**  
+**Pedido de Oração:"""+str(pedido)+"""** 
 """
   
   #send telegram message
