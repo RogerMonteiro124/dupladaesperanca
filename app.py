@@ -2,6 +2,8 @@ from flask import Flask, request, render_template, redirect, url_for, send_file
 from threading import Thread
 import csv
 from datetime import datetime
+from telegram import Update
+from telegram.ext import Updater, CommandHandler, MessageHandler, CallbackContext
 
 now = datetime.today().strftime('%d-%m-%Y')
 bot = telegram.Bot(token=os.environ['TOKEN'])
