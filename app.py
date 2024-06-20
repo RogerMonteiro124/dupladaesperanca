@@ -55,6 +55,19 @@ def get_data():
                   "&text=" + str(text) + "&mensagem=" + str(pedido))
 
 
+@app.route('/create')
+def create():
+  f = open("demofile2.txt", "a")
+  f.write("Now the file has more content!")
+  f.close()
+  return 'I am Alive in ' + str(now)
+
+@app.route('/leia')
+def leia():
+  f = open("demofile2.txt", "r")
+  print(f.read())
+  return 'I am Alive in ' + str(now)
+
 @app.route('/live')
 def home():
   return 'I am Alive in ' + str(now)
